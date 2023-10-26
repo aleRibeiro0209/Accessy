@@ -1,0 +1,84 @@
+body.dark {
+    --white: #000;
+    --text-opacity: #000;
+    --white-opacity: rgba(255, 255, 255, 0.5);
+    --primary-background-home: rgba(37, 37, 37, 0.95);
+
+    --background-form: #252525;
+
+    --white-opacity-search: hsla(0, 0%, 100%, 0.41);
+    --primary-border: #2C2C31;
+    --title-form: #fff;
+    --background-input: #3F3F44;
+
+    --border-form-bottom: #2C2C31;
+
+    --background-bottom-form: #252525;
+
+    --home-blog: hsla(200, 19%, 18%, 1);
+}
+
+/* home */
+body.dark {
+  --white: #000;
+  --white-opacity: rgba(0, 0, 0, 0.5);;
+  --primary-background: rgba(37, 37, 37, 0.95);
+  
+  --background-cards: #2C2C31;
+  --primary-blue-header:  #75B4FF;;
+
+  --white-opacity-search: hsla(0, 0%, 100%, 0.41);
+  --primary-border-home: #fff;
+
+  --home-blog: #fff;
+
+  color: #fff;
+}
+
+/* blog noticias */
+body.dark {
+    --background-all:  #252525;
+    --border-all: #2C2C31;
+
+    --background-input-search: #3F3F44;
+    --border-input-search: #2C2C31;
+
+    --text-color: #fff;
+    --text-color-secondary:  #3F3F44;
+
+    --text-input: #fff;
+
+    --background-hover: #3F3F44;
+}
+
+body.contraste {
+    background: black;
+    color: black;
+
+    --white-opacity: #fff;
+    --white: #000;
+    --primary-blue: #fff;
+
+    --text-input: #fff;
+    --background-hover: rgb(63, 62, 62);
+
+    --background-input-search: #000;
+    --background-input: #000;
+
+    --text-color-secondary: #000;
+
+    --title-black: #fff;
+    --title-price: #000;
+}
+
+.button-theme {
+    cursor: pointer;
+}
+
+.remove {
+    display: none;
+}
+
+.visible {
+    display: auto;
+}

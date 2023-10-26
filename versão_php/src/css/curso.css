@@ -1,0 +1,200 @@
+html {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+main div.search {
+    width: 300px;
+    /* height: 300px; */
+    background: #FFFFFF;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 9px 29px 11px 32px;
+}
+
+main div.search form {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.search form label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    color: #26314D;
+}
+
+main div.search form input {
+    width: 239px;
+    height: 36px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+main div.search form .input-search {
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.search form .input-search svg {
+    position: absolute;
+    right: 11px;
+}
+
+main div.search form p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 42px;
+    color: #9C98A6;
+
+    cursor: pointer;
+}
+
+main div.campo-curso {
+    width: 955px;
+    min-height: 451px;
+    background: var(--background-all);
+    border: 2px solid var(--border-all);
+    border-radius: 8px;
+    margin-bottom: 284px;
+
+    padding-bottom: 126px;
+}
+
+div.campo-curso .card {
+    display: flex;
+
+    margin: 54px 28.2px 0px 50px;;
+    width: 955px;
+    height: 265px;
+}
+
+div.campo-curso .card .card-logo-curso {
+    display: flex;
+    gap: 36.55px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+
+    margin-bottom: 33px;
+}
+
+div.campo-curso .card .card-logo-curso img {
+    width: 96.3px;
+    height: 100px;
+    border-radius: 70px;
+}
+
+div.campo-curso .card .card-logo-curso span {
+    color: var(--title-price);
+}
+
+div.campo-curso .card .descricao-curso {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--text-color);
+    max-width: 564.14px;
+    min-width: 564.14px;
+}
+
+div.campo-curso .card .card-descricao-extra {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    margin-left: 35.57px;
+}
+
+div.campo-curso .card .card-descricao-extra span {
+    font-weight: 700;
+}
+
+div.campo-curso hr {
+    border: 1px solid var(--background-hover);
+}
+
+@media (max-width: 1310px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div.search {
+        width: 100%;
+        max-width: 955px;
+    }
+    main div.search form input {
+        width: 100%;
+    }
+
+    main div.campo-curso {
+        width: 100%;
+        max-width: 955px;
+    }
+}
+
+@media (max-width: 980px) {
+    div.campo-curso .card {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        max-width: 875px;
+        margin-inline: 18px;
+    }
+
+    div.campo-curso .card .card-descricao-extra {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 980px) {
+    main div.campo-curso,
+    main div.search {
+        width: 90%;
+    }
+}
+
+@media (max-width: 680px) {
+    div.campo-curso .card .card-logo-curso {
+        gap: 14.55px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    div.campo-curso .card .descricao-curso,
+    div.campo-curso .card .card-descricao-extra {
+        width: 90%;
+        min-width: 0px;
+    }
+
+    div.campo-curso .card .card-logo-curso img {
+        height: 85px;
+        width: auto;
+    }
+
+    div.campo-curso .card .card-logo-curso p {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+

@@ -1,0 +1,82 @@
+html {
+    --text-color: #26314D;
+
+    --text-color-secondary: #9C98A6;
+}
+    
+h1
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 44px;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 8px;
+}
+
+p.autor {
+    color: var(--primary-blue-header);
+}
+
+main div.campo-vagas {
+    font-family: 'Archivo';
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 44px;
+
+    color: var(--text-color);
+
+    padding-inline: 30px;
+    padding-right: 39px;
+
+    text-align: justify;
+}
+
+.blog-text-img {
+    display: flex;
+    gap: 67px;
+}
+
+.first-text {
+    margin-top: 24px;
+    margin-bottom: 27px;
+
+    width: 510px;
+}
+
+.blog-text-img .box-img-blog .img-blog {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media (max-width: 850px) {
+    .blog-text-img {
+        flex-direction: column;
+        gap: 0;
+    }
+    .first-text {
+        width: auto;
+    }
+    .blog-text-img .box-img-blog {
+        text-align: center;
+        margin-bottom: 27px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    main div.campo-vagas {
+        font-size: 22px;
+    }
+}

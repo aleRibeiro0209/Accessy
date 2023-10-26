@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing - Acessy</title>
+
+    <!--Link para importação da fonte Poppins usada na página-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <!--Link para importação da fonte Archivo usada na página-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;700&family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/landing.css" />
+  </head>
+  <body>
+    <!--Inicio do conteúdo da página-->
+    <div class="container">
+      <div class="box-top">
+        <div id="box-titles">
+          <h1>Accessy</h1>
+          <h2>Conectando emprego e estudo de forma acessível.</h2>
+        </div>
+        <div id="image-acessy">
+          <img
+            src="./img/landing_acessy.svg"
+            alt="Imagem ilustrativa de PCDs juntas e felizes sorrindo"
+          />
+        </div>
+      </div>
+      <div class="box-bottom">
+        <div id="box-buttons">
+          <a id="btn-pessoas" href="#"
+            ><img src="./img/icon_pessoas.svg" alt="" />
+            <p>Pessoas</p></a
+          >
+          <a id="btn-empresa" href="#"
+            ><img src="./img/icon_empresa.svg" alt="" />
+            <p>Empresa</p></a
+          >
+        </div>
+        <div id="description">
+          <p>
+            Total de 285 conexões já realizadas
+            <img src="./img/heart.svg" alt="" />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Implementação do Vlibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app')
+    </script>
+  </body>
+</html>

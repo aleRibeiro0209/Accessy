@@ -1,0 +1,244 @@
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body 
+{ 
+    background-color: #F0F6F7;
+}
+h1 
+{
+    color: #75B4FF;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 4.4rem;
+
+}
+h2 
+{
+    color: #75B4FF;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 2.25rem;
+    
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 1.5rem 8rem;
+}
+.box-top, .box-bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.box-top
+{
+    height: 80%;
+}
+.box-bottom
+{
+    height: 20%;
+}
+#box-titles
+{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.875rem;
+    width: 100%;
+    height: 100%;
+}
+
+#box-titles div {
+    display: flex;
+    align-items: center;
+}
+
+#box-titles div img {
+    width: 150px;
+}
+
+#box-titles div h1 {
+    margin-left: -62px;
+    margin-top: 32px;
+}
+
+#box-titles div h1 span {
+    visibility: hidden;
+}
+
+#image-acessy
+{
+   text-align: center;
+   flex: 1;
+   height: 100%;
+   width: 100%; 
+}
+#image-acessy img
+{
+    height: 100%;
+    width: 100%;
+}
+#box-buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    flex: 3;
+}
+#btn-pessoas
+{
+    background: #75B4FF;
+    
+}
+#btn-empresa
+{
+    background: rgba(4, 211, 97, 0.75);
+}
+#btn-pessoas, #btn-empresa
+{
+    padding: 1.8rem;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    color: white;
+    max-height: 6.5rem;
+    min-height: 6.5rem;
+    max-width: 17.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+#btn-pessoas:hover, #btn-empresa:hover
+{
+    filter: brightness(0.9);
+    transform: translateY(-3px);
+}
+#description
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+#description p
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    color: #75B4FF;
+    white-space: nowrap;
+}
+@media(max-width:1100px)
+{
+     h2
+        {
+          font-size: 1.5rem;
+        }
+}
+@media(max-width:950px)
+{
+    html
+    {
+        font-size: 14px;
+    }
+    #box-titles
+    {
+       gap: 2.5rem; 
+       display: flex;
+        align-items: center;
+    }
+
+    #box-titles div h1 {
+        margin-left: -54px;
+    }
+ 
+    #box-buttons, #description
+    {
+        justify-content: center;
+    }
+    .box-top, .box-bottom
+    {
+        width: 100%;
+        height: min-content;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .box-bottom
+    {
+        gap: 1.5rem;
+    }
+    .container
+    {
+        gap: 1.8rem;
+        padding: 2rem 4rem;
+    }
+
+    #image-acessy img {
+        width: auto;
+        height: auto;
+    }
+
+    h2 {
+        text-align: center;
+        min-width: 288px;
+        width: 100%;
+    }
+}
+
+@media(max-width:720px)
+{
+    #box-titles div h1
+    {
+     font-size: 3.5rem;
+     margin-left: -44px;
+    }
+
+    #box-titles div img {
+        width: 135px;
+    }
+}  
+
+@media (max-width:600px) {
+    #image-acessy img {
+        width: 100%;
+        height: 100%;
+    }
+}

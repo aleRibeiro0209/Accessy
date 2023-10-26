@@ -1,0 +1,290 @@
+html {
+    overflow-x: hidden;
+
+    --background-form: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+main div.search {
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 9px 29px 11px 32px;
+}
+
+main div.search form {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.search form label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    color: #26314D;
+}
+
+main div.search form input {
+    width: 239px;
+    height: 36px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+main div.search form .input-search {
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.search form .input-search svg {
+    position: absolute;
+    right: 11px;
+}
+
+main div.search form p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 42px;
+    color: #9C98A6;
+
+    cursor: pointer;
+}
+
+main div.campo-vagas {
+    width: 955px;
+    background: #FFFFFF;
+    border: 2px solid #E6E6F0;
+    border-radius: 8px;
+    margin-bottom: 284px;
+
+    padding-bottom: 126px;
+}
+
+div.campo-vagas .card {
+    display: flex;
+
+    margin: 54px 28.2px 0px 50px;;
+    width: 955px;
+    height: 265px;
+}
+
+div.campo-vagas .card .card-logo-vaga {
+    display: flex;
+    gap: 36.55px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+
+    margin-bottom: 33px;
+}
+
+div.campo-vagas .card .card-logo-vaga img {
+    width: 96.3px;
+    height: 100px;
+    border-radius: 70px;
+}
+
+div.campo-vagas .card .card-logo-vaga span {
+    color: #75B4FF;
+}
+
+div.campo-vagas .card .descricao-vaga {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 42px;
+    color: #000000;
+    max-width: 564.14px;
+}
+
+div.campo-vagas .card .card-descricao-extra {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    margin-left: 35.57px;
+}
+
+div.campo-vagas .card .card-descricao-extra span {
+    font-weight: 700;
+}
+
+div.campo-vagas hr {
+    border: 1px solid #E6E6F0;
+}
+
+@media (max-width: 1310px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div.search {
+        width: 100%;
+        max-width: 955px;
+    }
+    main div.search form input {
+        width: 100%;
+    }
+
+    main div.campo-vagas {
+        width: 100%;
+        max-width: 955px;
+    }
+}
+
+@media (max-width: 980px) {
+    div.campo-vagas .card {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        max-width: 875px;
+        margin-inline: 18px;
+    }
+
+    div.campo-vagas .card .card-descricao-extra {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 980px) {
+    main div.campo-vagas,
+    main div.container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 680px) {
+    div.campo-vagas .card .card-logo-vaga {
+        gap: 14.55px;
+        align-items: center;
+    }
+
+    div.campo-vagas .card .descricao-vaga,
+    div.campo-vagas .card .card-descricao-extra {
+        width: 90%;
+    }
+
+    div.campo-vagas .card .card-logo-vaga img {
+        height: 85px;
+        width: auto;
+    }
+
+    div.campo-vagas .card .card-logo-vaga p {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+
+
+
+
+
+
+/* Modal =========================== */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    padding: 2.4rem;
+
+    position: relative;
+    z-index: 1;
+
+    background: var(--background-form);
+    border: 1px solid var(--primary-border);
+    border-radius: 8px;
+
+    height: 100%;
+    max-height: 807px;
+
+    overflow-y: auto;
+/*
+    max-width: 500px;
+    width: 90%;
+*/
+}
+
+/* Form =========================== */
+
+.form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+
+    background: var(--background-input-search);
+    border: 1px solid var(--border-input-search);
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 30px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: var(--text-input);
+}
+
+.button.cancel {
+    background-color: rgba(117, 180, 255, 0.46);
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group .help{
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button, 
+.input-group.actions button {
+    width: 48%;
+}

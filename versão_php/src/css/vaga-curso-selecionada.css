@@ -1,0 +1,71 @@
+main div.campo-vagas {
+    width: 80%;
+}
+
+
+div.campo-vagas .card .cancel-button svg {
+    position: absolute;
+    top: -43px;
+    right: 0px;
+    cursor: pointer;
+}
+
+div.campo-vagas .card {
+    width: initial;
+    height: auto;
+    display: block;
+
+    margin-bottom: 70px;
+}
+
+div.campo-vagas .card .card-descricao-extra {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-header-card {
+    margin-top: 30px;
+}
+
+.top-header-description {
+    display: flex;
+    margin-bottom: 55px;
+    flex-wrap: wrap;
+}
+
+div.campo-vagas .card .descricao-vaga {
+    min-width: initial;
+    max-width: 100%;
+}
+
+div.campo-vagas .card .favorite-button svg {
+    right: 0px;
+    top: auto;
+}
+
+div.campo-vagas .card .cancel-button svg path {
+    fill: var(--black);
+}
+
+.box-button {
+    width: 219.047px;
+    margin-inline: auto;
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    padding: 15px 40px;
+    margin-top: 34px;
+
+    background: #04d361;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;    
+}

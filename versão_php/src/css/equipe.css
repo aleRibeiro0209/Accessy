@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-blue: #75b4ff;
+  --white: #ffffff;
+  --white-opacity: rgba(255, 255, 255, 0.5);
+  --primary-background: #f0f0f7;
+
+  --white-opacity-search: hsla(0, 0%, 100%, 0.41);
+  --primary-border: #e6e6f0;
+
+  --home-blog: hsla(200, 19%, 18%, 1);
+
+  --title-black: #000;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-background);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 44px;
+
+  margin-bottom: 65px;
+  
+  color: var(--primary-blue);
+}
+
+main section.team-group-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+  flex-wrap: wrap;
+
+  margin-bottom: 272px;
+}
+
+main section.team-group-cards .team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 440px;
+  height: 1045px;
+  background-color: var(--white-opacity);
+}
+
+main section.team-group-cards .team-card img {
+  width: 100%;
+}
+
+main section.team-group-cards .team-card h2 {
+  font-size: 28px;
+  margin: 43px auto 26px auto;
+  text-align: center;
+}
+
+main section.team-group-cards .team-card p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  
+  text-align: justify;
+  
+  max-width: 373px;
+  margin-inline: auto;
+  margin-bottom: 51px;
+
+  min-height: 220px;
+  max-height: 220px;
+}
+
+main section.team-group-cards .team-card a {
+  padding: 15px 40px;
+  display: block;
+  margin-inline: auto;
+
+  width: 224px;
+  height: 56px;
+
+  background: #04d361;
+  color: #000;
+  border-radius: 8px;
+
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 26px;
+
+  text-decoration: none;
+}
+
+main section.team-group-cards .team-card a:hover {
+  transition: background 0.4s;
+  background: #04d2618a;
+}
+
+@media (max-width:550px) {
+  main h1 {
+    font-size: 38px;
+  }
+
+  main section.team-group-cards .team-card p {
+    margin-inline: 15px;
+  }
+}
